@@ -32,6 +32,7 @@ Just like map and filter, reduce is defined on Array.prototype and so is availab
 
 you can use map to operatte on the element directly rather than having to index into the array. map returns an arrayy so yyou can chain  it  with other array m ethods. map returns  an  array with the finished product, rather than requiring us to mutate an array inside the loop.
 
+example : topic 2 tasks 1 through 4
 
 2. Explain the difference between a callback and a higher order function.
 
@@ -46,7 +47,9 @@ Closures gives you access to an outer function's scope from an inner function.
 In non-strict mode `this` will default to the global object
 `this` point to the object on which the function is called
 we can set `this`to point to a certain value using call, apply, bind.
-using the `new` keyword constructs a new object and `this` points it
+using the `new` keyword constructs a new object and `this` points it.
+
+Whenever a function is contained in the global scope, the value of this inside of that function will be the window object. Whenever a function is called by a preceding dot, the object before that dot is this. Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function. Whenever JavaScript’s call or apply method is used, this is explicitly defined.
 
 5. Why do we need super() in an extended class?
 
