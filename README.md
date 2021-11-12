@@ -26,7 +26,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
-.map .foreach doesnt mutate the array which means given array doesn`t change
+map creates a new array by transforming every element in an array individually. filter create a new array by removing elements that don't belong. reduce, on the other hand, takes all of the elements in an array and reduces them into a single value. 
+
+Just like map and filter, reduce is defined on Array.prototype and so is available on any array, and you pass a callback as its first arguement. But it also takes a second arguement: the value to start combining all of your array elements into. 
+
+you can use map to operatte on the element directly rather than having to index into the array. map returns an arrayy so yyou can chain  it  with other array m ethods. map returns  an  array with the finished product, rather than requiring us to mutate an array inside the loop.
+
 
 2. Explain the difference between a callback and a higher order function.
 
